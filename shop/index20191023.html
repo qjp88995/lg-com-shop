@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>直购商城-大宗商品在线交易平台</title>
+		<meta content="乐刚网是“国内首创的”集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品(如热轧、冷轧、中厚板、彩涂、管材等钢材类产品)综合性电商服务平台。" name="description">
+		<meta content="乐刚网是“国内首创的”集找钢、采购、销售、加工、配送、供应链金融、在线支付、物流跟踪、电子单据、入驻开店等一系列在线服务的大宗商品(如热轧、冷轧、中厚板、彩涂、管材等钢材类产品)综合性电商服务平台。" name="keywords">
+		<link rel="icon" href="http://resource.lgsteel.cn/public/images/favicon.ico" mce_href="http://resource.lgsteel.cn/public/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="http://resource.lgsteel.cn/public/style/lib.css">
+		<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lg19laydate.css">
+		<link rel="stylesheet" href="http://resource.lgsteel.cn/mainSite19/css/lgSite1908.css?v=2.0">
+		<!-- <link rel="stylesheet" href="../css/lgSite1908.css?v=4.0"> -->
+		<link rel="stylesheet" href="http://resource.lgsteel.cn/public/js/mCustomScrollbar/jquery.mCustomScrollbar.min.css">
+		<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/parabola.js"></script>
+
+		<style>
+/*		.smallsetHover .hover_ck,.spsmallsetHover .hover_ck{padding:6px 20px;min-width: 230px}
+*/		</style>
+
+		
+
+</head>
+<body>
+	<div class="innerPage"><script type="text/javascript" src="../js/header.js"></script></div>
+	<div class="shopcart_fly" id="shopcart_fly">
+		<img width="50" height="50" src="http://resource.lgsteel.cn/mainSite19/images/mall/shop_cart_logo.png">
+    </div>
+
+	<div class="mallbg mt-20" >
+		<div class="w1180 auto">
+			<div class="mallbanner">
+				<div class="bannerSearch r rel mr5">
+					<input type="text" class="l bannerSearchInput" placeholder="品名  |  牌号  |  规格  |  钢厂  |  仓库（支持首字母查询）" autocomplete="off" id="HeaderSearch" /> <!-- 详见headerSearch.js 文件 -->
+					<div class="sContent"></div>
+					<a class="r dib bannerSearchBut h_icon" href="javascript:void(0)"></a>
+					<a class="dib h_icon abs bannerSearchdel" href="javascript:void(0)"></a>
+
+				</div>
+			</div>
+			<div class="mallsearch" style="margin-bottom: 18px;">
+				<div class="pt10 pl40 pr40 f12">
+					<div class="cl lh28 ovh  pt10 " id="v_pmDiv">
+						<span class="l gAD pct5">品名：</span>
+						<span class="l pct90 mallScontent" id="v_pmlist">
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">铝棒铝棒</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">铝棒铝棒</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">铝棒</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">铝棒铝棒</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">铝棒铝棒</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">铝棒</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="冷轧卷板">冷轧卷板</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="pm_zy" onclick="setNavSearch(this)" title="铝棒">热轧花纹卷板</a>
+						</span>
+						<span class="r pct5 tr"><a href="javascript:void(0)" onclick="scrollUp(this)" class="mallSearchMore"><span class="dib mallSMoreTxt">更多</span><i class="dib h_icon mallSMoreIcon ml5"></i></a></span>
+					</div> <!-- 品名 end-->
+					<div class="gapline"></div>
+					<div class="cl lh28 ovh  " id="v_ggDiv">
+						<span class="l gAD pct5">规格：</span>
+						<span class="l pct90 mallScontent" id="v_gglist">
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="1.000*884*884">1.000*884*884</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="1.200*1300*C">1.200*1300*C</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="1.000*(61*10)*C">1.000*(61*10)*C</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="3.000*(120*10+104*2+81.5*1)*C">3.000*(120*10+104*2+81.5*1)*C</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="2.000*1250*1780">2.000*1250*1780</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="1.000*1250*2740">1.000*1250*2740</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="1.500*1250*2170">1.500*1250*2170</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="5.800*1250*C">5.800*1250*C</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="gg_zy" onclick="setNavSearch(this)" title="0.950*840*C">0.950*840*C</a>
+						</span>
+						<span class="r pct5 tr"><a href="javascript:void(0)" onclick="scrollUp(this)" class="mallSearchMore"><span class="dib mallSMoreTxt">更多</span><i class="dib h_icon mallSMoreIcon ml5"></i></a></span>
+					</div><!-- 规格： end-->
+					<div class="gapline"></div>
+					<div class="cl lh28 ovh  " id="v_phDiv">
+						<span class="l gAD pct5">牌号：</span>
+						<span class="l pct90 mallScontent" id="v_phlist">
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="cz_zy" onclick="setNavSearch(this)" title="RECC">RECC</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="cz_zy" onclick="setNavSearch(this)" title="G235">G235</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="cz_zy" onclick="setNavSearch(this)" title="HC300LAD+Z">HC300LAD+Z</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="cz_zy" onclick="setNavSearch(this)" title="QSTE500TM">QSTE500TM</a>
+							<a class="mallSearchList dib" href="javascript:void(0)" searchtype="cz_zy" onclick="setNavSearch(this)" title="QSTE340TM">QSTE340TM</a>
+						</span>
+						<span class="r pct5 tr"><a href="javascript:void(0)" onclick="scrollUp(this)" class="mallSearchMore"><span class="dib mallSMoreTxt">更多</span><i class="dib h_icon mallSMoreIcon ml5"></i></a></span>
+					</div><!-- 牌号： end-->
+					<div class="gapline"></div>
+					<div class="cl lh28 ovh">
+						<span class="gAD dib">购买类型：</span>
+						<span class="dib pl10">
+							<a class="mallSearchList dib on" href="javascript:void(0)" onclick="setNavType(this)">全部</a>
+							<a class="mallSearchList dib setHover" href="javascript:void(0)" onclick="setNavType(this)">
+							一键购买
+							<span class="hover_ck g28"><i class="dib abs hover_ckdot"><i class="dib abs hover_ckdot2"></i></i>一键购买：价格不可议，销售合同一键生成</span>
+							</a>
+							<a class="mallSearchList dib setHover" href="javascript:void(0)" onclick="setNavType(this)">
+							议价购买
+							<span class="hover_ck g28"><i class="dib abs hover_ckdot"><i class="dib abs hover_ckdot2"></i></i>议价购买：价格可议，销售合同需核价生成</span>
+							</a>
+						</span>
+					</div><!-- 购买类型： end-->
+					<div class="cl msearchLine"></div>
+					<div class="cl ovh ">
+						<div class="l w700 h90 ">
+							<div class="l pct25">
+								<input type="text" class="lgInput w150 vm searchInputDot lgsearchInput" id="qy_zy" placeholder="区域" />
+								<div class="sContent">
+									<a py="" pyjc="" class="sContentList ell j_sitem" href="javascript:void(0)">苏州</a>
+									<a py="hangzhou" pyjc="hz" href="javascript:void(0)" class="sContentList ell poi j_sitem">杭州</a>
+									<a py="shenchou" pyjc="sz" href="javascript:void(0)" class="sContentList ell poi j_sitem">深圳</a>
+									<a py="wuxi" pyjc="wx" href="javascript:void(0)" class="sContentList ell poi j_sitem">无锡</a>
+									<a py="changshu" pyjc="cs" href="javascript:void(0)" class="sContentList ell poi j_sitem">常熟</a>
+									<a py="shanghai" pyjc="sh" href="javascript:void(0)" class="sContentList ell poi j_sitem">上海</a>
+									<a py="" pyjc="" class="sContentList ell j_sitem" href="javascript:void(0)">苏州</a>
+									<a py="hangzhou" pyjc="hz" href="javascript:void(0)" class="sContentList ell poi j_sitem">杭州</a>
+									<a py="shenchou" pyjc="sz" href="javascript:void(0)" class="sContentList ell poi j_sitem">深圳</a>
+									<a py="wuxi" pyjc="wx" href="javascript:void(0)" class="sContentList ell poi j_sitem">无锡</a>
+									<a py="changshu" pyjc="cs" href="javascript:void(0)" class="sContentList ell poi j_sitem">常熟</a>
+									<a py="shanghai" pyjc="sh" href="javascript:void(0)" class="sContentList ell poi j_sitem">上海</a>
+								</div>								
+							</div><!-- 区域：end -->
+							<div class="l pct25">
+								<input type="text" class="lgInput w150 vm searchInputDot lgsearchInput" id="ck_zy" placeholder="仓库" />
+								<div class="sContent">
+								</div>
+							</div><!-- 仓库：end -->
+							<div class="l pct25">
+								<input type="text" class="lgInput w150 vm searchInputDot lgsearchInput" id="gc_zy" placeholder="钢厂" />
+								<div class="sContent tl">
+									<a py="yangang" pyjc="yg"  href="javascript:void(0)"  class="sContentList ell j_sitem">燕钢</a>
+								</div>
+							</div><!-- 钢厂：end -->
+							<div class="l pct25">
+								<input type="text" class="lgInput w150 vm searchInputDot lgsearchInput" id="gc_zy" placeholder="云商城" />
+								<div class="sContent tl">
+									<a py="yangang" pyjc="yg"  href="javascript:void(0)"  class="sContentList ell j_sitem">唐钢华冶</a>
+								</div>
+							</div><!-- 钢厂：end -->
+
+							<div class="l  pct50  mt10">
+								<span class="dib lgInput w150"><input type="text" class="inputnoline lh30 pct66 h30" id="minWeight" name="resource.minWeight" placeholder="重量" /><span class="dib g8 tc">吨</span></span>
+								<span class="dib g8 tc w18" > — </span>
+								<span class="dib lgInput w150"><input type="text" class="inputnoline lh30 pct66 h30"  id="maxWeight" name="resource.maxWeight" placeholder="重量" /><span class="dib g8 tc">吨</span></span>
+							</div>
+							<div class="r pct50 mt10 ">
+								<input type="text" class="lgInput w150 vm  lgsearchInput laydate-icon" id="supPickDateStart" onclick="laydate({istime: false, format: 'YYYY-MM-DD'})" placeholder="提货日期" />
+								<span class="dib g8 tc w18" > — </span>
+								<input type="text" class="lgInput w150 vm  lgsearchInput laydate-icon" id="supPickDateEnd" onclick="laydate({istime: false, format: 'YYYY-MM-DD'})"  placeholder="提货日期" />
+							</div>
+						</div>
+						<div class="r pct20 tr mt42 ">
+							<a href="javascript:void(0)" class="searchBut dib mr30 f14">搜索</a>
+							<a href="javascript:void(0)" class="dib g8 f14">清空</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div> <!-- mallbg end -->
+
+	<!-- 资源列表 -->
+	<div class="w1180 auto" id="pageListDiv">
+		<style>
+			.merchant-title {
+				font-family: PingFangSC-Regular;
+				font-size: 14px;
+				color: #ADADAD;
+				line-height: 20px;
+			}
+			.merchant-list {
+				font-size: 0;
+			}
+			.merchant-item-wrap {
+				position: relative;
+				box-sizing: border-box;
+				display: inline-block;
+				width: 25%;
+				height: 90px;
+				vertical-align: top;
+			}
+			.merchant-item {
+				box-sizing: border-box;
+				width: 100%;
+				padding: 15px 20px 25px;
+			}
+			.merchant-item-wrap:hover .merchant-item {
+				position: absolute;
+				left: 0;
+				top: 0;
+				padding: 14px 19px 14px;
+				background: #FFFFFF;
+				border: 1px solid #E5E5E5;
+				box-shadow: 0 5px 15px 0 rgba(0,0,0,0.10);
+				border-radius: 3px;
+			}
+			.merchant-item .avatar {
+				box-sizing: border-box;
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				object-fit: cover;
+				object-position: 50% 20%;
+				border-radius: 50%;
+				vertical-align: top;
+				border: 1px solid #e6e6e6;
+				box-shadow: 0 0 5px 0 rgba(0,0,0,0.10);
+			}
+			.merchant-item .info {
+				padding-top: 2px;
+				box-sizing: border-box;
+				display: inline-block;
+				width: calc(100% - 50px);
+				height: 100%;
+				padding: 0 10px;
+				vertical-align: top;
+			}
+			.merchant-item .info .name {
+				font-family: PingFangSC-Regular;
+				font-size: 14px;
+				color: #282828;
+				line-height: 25px;
+			}
+			.merchant-item .info .phone {
+				margin-left: 25px;
+				font-family: PingFangSC-Regular;
+				font-size: 12px;
+				color: #808080;
+				line-height: 25px;
+				letter-spacing: 0;
+			}
+			.merchant-item .intro {
+				margin-top: 4px;
+				font-family: PingFangSC-Regular;
+				font-size: 12px;
+				color: #808080;
+				line-height: 20px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				word-break: break-all;
+			}
+			.merchant-item-wrap:hover .merchant-item .intro {
+				white-space: inherit;
+				text-overflow: inherit;
+				overflow: inherit;
+				word-break: inherit;
+			}
+			.merchant-item .phone::before {
+				content: url('../images/icon-phone.png');
+				position: relative;
+				top: 3px;
+			}
+			.merchant-item .qq::before {
+				content: url('../images/icon-qq.png');
+				position: relative;
+				top: 3px;
+			}
+		</style>
+		<div class="merchant-wrap">
+			<div class="merchant-title">为您推荐金牌商家：</div>
+			<div class="merchant-list">
+				<a href="javascript:void(0)" class="merchant-item-wrap">
+					<div class="merchant-item">
+						<img class="avatar" src="data:image/jpg;base64,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" alt="">
+						<div class="info">
+							<span class="name">顾一杰</span>
+							<span class="phone">13916911143</span>
+							<div class="intro">
+								主营：涂镀类、不锈钢、板材类、建材类、优钢类、管材类、卷板类…
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="javascript:void(0)"  class="merchant-item-wrap">
+					<div class="merchant-item">
+						<img class="avatar" src="data:image/jpg;base64,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" alt="">
+						<div class="info">
+							<span class="name">顾一杰</span>
+							<span class="phone">13916911143</span>
+							<div class="intro">
+								主营：涂镀类、不锈钢、板材类、建材类、优钢类、管材类、卷板类…
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="javascript:void(0)"  class="merchant-item-wrap">
+					<div class="merchant-item">
+						<img class="avatar" src="data:image/jpg;base64,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" alt="">
+						<div class="info">
+							<span class="name">顾一杰</span>
+							<span class="phone">13916911143</span>
+							<div class="intro">
+								主营：涂镀类、不锈钢、板材类、建材类、优钢类、管材类、卷板类…
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="javascript:void(0)"  class="merchant-item-wrap">
+					<div class="merchant-item">
+						<img class="avatar" src="data:image/jpg;base64,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" alt="">
+						<div class="info">
+							<span class="name">顾一杰</span>
+							<span class="phone">13916911143</span>
+							<div class="intro">
+								主营：涂镀类、不锈钢、板材类、建材类、优钢类、管材类、卷板类…
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="tableTitle">
+			<div class="l pct4">&ensp;</div>
+			<div class="l pct15">品名-牌号</div>
+            <div class="l pct10">规格</div>
+            <div class="l pct9 tc">数量</div>
+            <div class="l pct9">钢厂</div>            
+            <div class="l pct12">区域-仓库</div>
+            <div class="l pct8">重量(吨)</div>
+            <div class="l pct9 poi priceSortCont tc">价格(元/吨)
+              <i class="h_icon  dib priceSort vm poi"></i>
+            </div>
+            <div class="l pct14 tc">货主</div>
+            <div class="l pct10 tc">操作</div>			
+		</div>
+		<div class="tableCont cl nextDom">
+			<div class="tableList">
+				<div class="l pct4 tr">
+					<span class="setClodyHover  tc poi mr10" onclick="gotoLocation()">
+						<i class="mall_clody dib vm"></i>
+						<div class="hover_cloudy tl ovh" >
+							<div class="l ell hover_clTxt pct85">上海北铭商城</div>
+							<div class="l pct15 tl"><i class="h_icon hover_clIcon dib vm mt17"></i></div>
+						</div>
+					</span>
+				</div>
+				<div class="l pct15  lh24"><div class="ell mt25" title="不锈钢异-TDC51DZTDC51DZ">不锈钢异-TDC51DZTDC51DZ</div><div class="gADA f12 ell">提货时间：2019-10-10</div></div>
+	            <div class="l pct10  ell">1.000*1250*2000</div>
+	            <div class="l pct9 tc ell">20</div>
+	            <div class="l pct9 ell">日照宝华</div>            
+	            <div class="l pct12 ell">
+	            	<span class="setHover poi">
+	            	<a href="javascript:void(0)" class="blue">上海-华冶A区2</a>
+	            	<span class="hover_ck ell">
+                		<i class="dib abs hover_ckdot"><i class="dib abs hover_ckdot2"></i></i>
+                		<span class="f18 dib mb10">空港库</span><br>
+                		<span class="dib lh20">仓库地址：天津市天津市东丽区天津空港物流加工区环河南路22天津市天津市东丽区天津空港物流加工区环河南路22天津市天津市东丽区天津空港物流加工区环河南路227号</span><br>
+                		<span class="dib lh20">联系电话：4008200666-5351</span>
+                	</span>
+               		</span>
+	            </div>
+	            <div class="l pct8 ell">1196.135</div>
+	            <div class="l pct9 ell red tc">¥<span class="f18">5813</span></div>
+	            <div class="l pct14 tc pt30 ovh">
+	            	<i class="h_smallPro dib vm mr5 l ml30"></i>
+	            	<div class="l lh18 tl">顾大侠<br/><span class="g8 f12 dib ell">18563556234</span></div>
+	            </div>
+	            <div class="l pct10 tc"><a href="javascript:void(0)" class="openBtn"><span class="dib openBtnTxt">展开</span><i class="dib h_icon openBtnIcon ml5"></i></a></div>
+	        </div>
+            <div class="cl subTable">
+            	
+            </div>
+		</div> <!-- tableCont 展开  end  -->
+		<div class="tableCont cl">
+			<div class="tableList">
+				<div class="l pct4 tr">
+					&nbsp;
+				</div>
+				<div class="l pct15  lh24"><div class="ell mt20">不锈钢异-TDC51DZ</div><div class="gADA f12 ell">提货时间：2019-10-10</div></div>
+	            <div class="l pct10  ell">1.000*1250*2000</div>
+	            <div class="l pct9 tc ell">20</div>
+	            <div class="l pct9 ell">日照宝华</div>            
+	            <div class="l pct12 ell setHover poi">
+	            	<a href="javascript:void(0)" class="blue">上海-华冶A区</a>
+	            	<span class="hover_ck">
+                		<i class="dib abs hover_ckdot"><i class="dib abs hover_ckdot2"></i></i>
+                		<span class="f18 dib mb10">空港库</span><br>
+                		<span class="dib lh20">仓库地址：天津市天津市东丽区天津空港物流加工区环河南路227号</span><br>
+                		<span class="dib lh20">联系电话：4008200666-5351</span>
+                	</span>
+	            </div>
+	            <div class="l pct8 ell">1196.135</div>
+	            <div class="l pct9 ell red tc ">¥<span class="f18">5813</span></div>
+	            <div class="l pct14 tc pt25 ovh">
+	            	<i class="h_smallPro dib vm mr5 l ml30"></i>
+	            	<div class="l lh18 tl">顾大侠<br/><span class="g8 f12 dib ell">18563556234</span></div>
+	            </div>
+	            <div class="l pct10 tc spsmallsetHover ">
+	            	<a href="javascript:void(0)" class="negBtn">一键购买</a>
+	            	<span class="hover_ck g28 f12"><i class="dib abs hover_ckdot" style="right:30px"><i class="dib abs hover_ckdot2"></i></i>一键购买：价格不可议，销售合同一键生成</span>
+	            </div>				
+			</div>
+		</div><!-- 一键购买 end -->
+		<div class="tableCont cl">
+			<div class="tableList">
+				<div class="l pct4 tr">
+					&nbsp;
+				</div>
+				<div class="l pct15  lh24"><div class="ell mt20">不锈钢异-TDC51DZ</div><div class="gADA f12 ell">提货时间：2019-10-10</div></div>
+	            <div class="l pct10  ell">1.000*1250*2000</div>
+	            <div class="l pct9 tc ell">20</div>
+	            <div class="l pct9 ell">日照宝华</div>            
+	            <div class="l pct12 ell setHover poi">
+	            	<a href="javascript:void(0)" class="blue">上海-华冶A区</a>
+	            	<span class="hover_ck">
+                		<i class="dib abs hover_ckdot"><i class="dib abs hover_ckdot2"></i></i>
+                		<span class="f18 dib mb10">空港库</span><br>
+                		<span class="dib lh20">仓库地址：天津市天津市东丽区天津空港物流加工区环河南路227号</span><br>
+                		<span class="dib lh20">联系电话：4008200666-5351</span>
+                	</span>
+	            </div>
+	            <div class="l pct8 ell">1196.135</div>
+	            <div class="l pct9 ell red tc ">¥<span class="f18">5813</span></div>
+	            <div class="l pct14  ovh">
+	            	<i class="h_smallPro dib vm ml30"></i>
+	            	<span class="dib lh30">顾大侠</span>
+	            </div>
+	            <!-- 若无电话号码 -->
+	            <div class="l pct10 tc spsmallsetHover">
+	            	<a href="javascript:void(0)" class="greenBtn">议价购买</a>
+	            	<span class="hover_ck g28 f12"><i class="dib abs hover_ckdot" style="right:30px"><i class="dib abs hover_ckdot2"></i></i>议价购买：价格可议，销售合同需核价生成</span>
+	            </div>				
+			</div>
+		</div><!-- 一键购买 end -->
+
+		<!-- pagelist -->
+		<script src="../js/showpage.js"></script>
+	</div>
+	
+	<div id="ctWrap0" class="dn">
+		<div class="mt40 tc  mb30 pt20">您选择的物品已成功放入购物车!</div>
+    	<div class="tc">
+    		<a href="javascript:layer.closeAll();" class="dib shopToShop mr20">继续购物</a>
+    		<a href="javascript:void(0);" onclick="gotoShoppingCart(event,this);" resourcetype="1" id="addCartGoToCatrBtn" class="dib shopToCart">去购物车</a>
+    	</div>
+	</div>
+
+	<script src="../js/footer.js"></script>
+	<script type="text/javascript" src="../js/scroll.js"></script> <!-- 右侧滚动条 -->
+
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/layer/3.1.1/layer.js"></script>
+	<script type="text/javascript" src="http://resource.lgsteel.cn/public/js/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="../js/laydate.js"></script>
+	<script type="text/javascript" src="headerSearch.js"></script><!-- 用于仓库搜索中滚动条所用，开发的时候对应的调整 -->
+	<script type="text/javascript" src="searchck_zy.js"></script><!-- 用于仓库搜索中滚动条所用，开发的时候对应的调整 -->
+	<script type="text/javascript" src="openResourceList.js"></script><!-- 用于资源列表中展开所用，开发的时候对应的调整 -->
+	<script src="http://resource.lgsteel.cn/public/js/fixScroll/myFixedScroll.js"></script> 
+
+	<script>
+		var opts={'pDom':'.w1180','distance':0,'nextDom':'.nextDom'}  //pDom为父节点，distance为距离,左侧菜单固定滚动
+		$(".tableTitle").eq(0).myscrollFunc(opts)
+
+		$(function(){
+
+			//顶部反白(放于内页公共文件)
+			$(window).scroll(function(){
+				var s=$(window).scrollTop();
+				if(s>115){
+					$(".innerPage").addClass("fixed");
+					$(".mallbg").css("margin-top","115px");
+				}else{
+					$(".innerPage").removeClass("fixed");
+					$(".mallbg").removeAttr("style");
+				}
+			})
+
+
+
+
+			//用于选中菜单
+			$("#nav").find("a").removeClass("on");  
+			$("#nav").find("a").eq(1).addClass("on");
+
+			//banner图处搜索按钮显示
+			$(".bannerSearchInput").on("keyup",function(){
+				$(this).parent(".bannerSearch").addClass("active");
+			})
+			$(".bannerSearchdel").on("click",function(){
+				$(this).parent(".bannerSearch").removeClass("active");
+				$(this).parent(".bannerSearch").find(".bannerSearchInput").val('');
+			})
+
+			$("body").on("click",function(){
+				$('.sContent').hide();
+			})
+
+			//用于搜索
+			$(".lgsearchInput").on("click",function(e){
+				var _this=this
+				stopPro(e);
+				getPosition(_this);
+				$(window).resize(function(){
+					getPosition(_this);
+				})
+				var searchCont = $(_this).next(".sContent");
+				if(searchCont.css("display")=="none"){
+					$(".sContent").hide();
+					searchCont.show();
+				}else{
+					searchCont.hide();
+				} 
+			})
+
+			$("body").on("click",".sContentList",function(){
+				$(this).parents(".sContent").prev(".lgsearchInput").val($(this).text());
+				$(this).parents(".sContent").hide();
+			})
+
+			//用于排序
+			$(".priceSortCont").on("click",function(){
+				var obj=$(this).find(".priceSort");
+				if(obj.hasClass("down")){
+					obj.removeClass("down").addClass("up")
+				}else{
+					obj.removeClass("up").addClass("down")
+				}
+			})
+
+			//checkbox 选择
+			$("body").on("click", ".iconcheckbox", function () {
+				if ($(this).hasClass("active")) {
+					$(this).children(":checkbox").prop("checked", false);
+					$(this).removeClass("active");
+				} else {
+					$(this).children(":checkbox").prop("checked", true);
+					$(this).addClass("active");			
+				}
+			})
+
+			//仓库显示
+			$(".setHover").hover(function(){
+				$(this).children(".hover_ck").css({"left":$(this).offset().left,"top":$(this).offset().top+$(this).height()/2+20});
+				$(this).children(".hover_ck").show();
+			},function(){
+				$(this).children(".hover_ck").hide();
+			})
+
+			//展开的提示 20200108
+			$("body").on("mouseover",".smallsetHover",function(){
+
+				$(this).children(".hover_ck").css({"right":"30px","top":$(this).height()-10});
+			 	$(this).children(".hover_ck").show();
+			 	if($(this).parents(".subTableCont").find(".subTableList").length<=7){
+			 		$(".mCustomScrollBox").css("overflow","visible");
+			 		$(".mCSB_container").css("overflow","visible");
+			 	}			 	
+
+			})
+
+
+			$("body").on("mouseout",".smallsetHover",function(){
+				$(this).children(".hover_ck").hide();
+				if($(this).parents(".subTableCont").find(".subTableList").length<=7){
+			 		$(".mCustomScrollBox").css("overflow","hidden");
+			 		$(".mCSB_container").css("overflow","hidden");
+			 	}	
+				
+			})
+
+			//外面的提示 20200108
+			$("body").on("mouseover",".spsmallsetHover",function(){
+				$(this).children(".hover_ck").css({"left":$(this).offset().left-$(this).children(".hover_ck").outerWidth(true)+100,"top":$(this).offset().top+$(this).height()/2+20});
+				$(this).children(".hover_ck").show();
+			})
+			$("body").on("mouseout",".spsmallsetHover",function(){
+				$(this).children(".hover_ck").hide();
+			})
+
+
+			//乐刚云
+			$("body").on("mouseover",".setClodyHover",function(){
+				$(this).children(".hover_cloudy").css({"left":$(this).offset().left-34,"top":$(this).offset().top+$(this).height()/2});
+				$(this).children(".hover_cloudy").show();
+			})
+			$("body").on("mouseout",".setClodyHover",function(){
+				$(this).children(".hover_cloudy").hide();
+			})
+
+			//
+			$(".negBtn").on("click",function(){
+					$(this).addClass("active")
+					addShopcart(this)
+				// 	layer.open({
+				// 	type: 1,
+				// 	title : '提示',
+				// 	shadeClose : true,
+				// 	shade: 0.1,		
+				// 	area : [ '358px', '260px' ],
+				// 	content: $('#ctWrap0')
+				// });
+			})
+
+
+
+
+			
+		})
+
+		//用于滚动条
+       $(window).load(function(){
+		    $(".sContent").mCustomScrollbar({
+			    theme:"minimal-dark"
+			});
+			 			 
+	    });       
+
+       function gotoLocation(){
+       		window.location='http://shop.cntghy.com'
+       }
+
+       function addShopcart(currentObj){
+			var eleFlyElement = $("#shopcart_fly")[0], eleShopCart = $(".cart_nav_title")[0];
+				
+				// 抛物线运动
+				var myParabola = funParabola(eleFlyElement, eleShopCart, {
+					speed: 200,
+					curvature: 0.002,	
+					complete: function() {
+						eleFlyElement.style.display = "none";
+					}
+				});
+				
+				if (eleFlyElement && eleShopCart) {
+					// 滚动大小
+					eleFlyElement.style.display = "block";
+					eleFlyElement.style.left = $(currentObj).offset().left + "px";
+					eleFlyElement.style.top = $(currentObj).offset().top +"px";
+						
+					// 需要重定位
+					myParabola.position().move();
+					var fcl = document.getElementById('shopcart_fly').offsetLeft - 10;
+					document.getElementById('shopcart_fly').style.left=fcl+'px';
+
+				}
+			}
+
+
+		//banner 搜索的展开收起
+		function scrollUp(obj){
+			var myobj=$(obj).parent().prev(".mallScontent");
+			if(myobj.height()==28){
+				myobj.animate({'height': '84px'});
+				myobj.addClass("ova");				
+				$(obj).children(".mallSMoreTxt ").text('收起')
+				$(obj).children(".mallSMoreIcon ").addClass("up");
+			}else{
+				myobj.animate({'height':'28px'	});
+				myobj.removeClass("ova");
+				$(obj).children(".mallSMoreTxt ").text('展开')
+       		    $(obj).children(".mallSMoreIcon ").removeClass("up");
+				
+			}
+		}
+
+
+		function setNavSearch(obj){
+			var myobj=$(obj);
+			var name=myobj.text();
+			var searchtype=myobj.attr("searchtype");
+			if(myobj.parent(".mallScontent").find(".active").length>0){
+				var activeobj=myobj.parent(".mallScontent").find(".active");
+				activeobj.attr("title",name);
+				activeobj.find(".mallSListTxt").text(name);
+			}else{
+				var str='<a class="mallSearchList dib active" href="javascript:void(0)" searchtype="'+searchtype+'" onclick="cancelSearch(this)" title="'+name+'"><span class="mallSListTxt">'+name+'</span><i class="dib h_icon mallSListCancel vm ml5"></i></a>';
+				myobj.parent(".mallScontent").prepend(str);
+			}
+
+		}
+
+		function cancelSearch(obj){
+			$(obj).remove();
+		}
+
+		function setNavType(obj){
+			$(obj).siblings().removeClass("on");
+			$(obj).addClass("on")
+		}
+
+		//
+		function  chooseAll(obj){
+			if($(obj).parent().hasClass("active")){
+				$(obj).parents(".subTable").find(".iconcheckbox").not($(obj).parent()).removeClass("active");
+				$(obj).parents(".subTable").find(".opacity-checkbox").not($(obj)).prop("checked",false);
+			}else{
+				$(obj).parents(".subTable").find(".iconcheckbox").not($(obj).parent()).addClass("active");
+				$(obj).parents(".subTable").find(".opacity-checkbox").not($(obj)).prop("checked",true);
+			}
+		}
+
+		// 清空
+		function clearSearch(){
+			$(".mallsearch").find(".active").remove();
+			$(".mallsearch").find("input").val('');
+			//mallIndexUtil.doSearch();
+		}
+
+		//搜索定位
+		function getPosition(obj,str){
+			if(str==undefined){
+				$(obj).next(".sContent").css({"width":$(obj).outerWidth()});		
+			}else{
+				$(obj).next(".sContent").css({"width":str});
+			}
+			$(obj).next(".sContent").css({"left":$(obj).offset().left,"top":$(obj).offset().top+$(obj).outerHeight()+1});			
+		}
+
+		//阻止冒泡
+		function stopPro(e){
+			if(navigator.appName == "Microsoft Internet Explorer" && (navigator.appVersion.match(/7./i)=="7."|| navigator.appVersion.match(/8./i)=="8.")) 
+			{ 
+				
+				if (event.stopPropagation) { 
+				// this code is for Mozilla and Opera 
+				event.stopPropagation(); 
+				} 
+				else if (window.event) { 
+				// this code is for IE 
+				window.event.cancelBubble = true; 
+				}
+			}else{
+				e.stopPropagation();
+		 }
+		}
+
+	</script>
+</body>
+</html>
